@@ -1,4 +1,4 @@
-# Project 3: Around The U.S.
+# Project 3: Around The U.S. (https://github.com/Nilyok/se_project_aroundtheus.git)
 
 ### Overview  
 
