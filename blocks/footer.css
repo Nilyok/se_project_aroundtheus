@@ -1,0 +1,13 @@
+.page__footer {
+    color: white;
+    padding-top: 67px;
+}
+
+@media screen and (max-width:480px) {
+
+    .page__footer{
+        display: flex;
+        justify-content: flex-start;
+        max-width: 282px;
+    }
+}

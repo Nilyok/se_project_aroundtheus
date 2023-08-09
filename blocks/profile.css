@@ -1,9 +1,9 @@
 .profile {
     display: flex;
+    justify-content: center;
+    max-width: 880px;
     padding-top: 40px;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
 }
 
 .profile__info {
@@ -12,6 +12,8 @@
         "title button"
         "description description";
     grid-template-columns: minmax(auto, 373px) auto;
+    align-items: center;
+    align-content: center;
 }
 
 .profile__edit-button {
@@ -19,14 +21,21 @@
     height: 24px;
     width: 24px;
     grid-area: button;
+    padding-left: 18px;
+    border-color: white;
+    cursor: pointer;
+    opacity: 1;
 }
 
 .profile__add-button {
     background: transparent url(../images/Add\ Button.svg) center no-repeat;
     width: 150px;
     height: 50px;
+    grid-area: button;
+    border-color: white;
     margin-left: auto;
-    margin-right: auto;
+    cursor: pointer;
+    opacity: 1;
 }
 
 .profile__title {
@@ -35,12 +44,15 @@
     font-weight: 500;
     grid-area: title;
     margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .profile__description {
     font-size: 18px;
     line-height: 22px;
-    font-weight: 400px;
+    font-weight: 400;
     grid-area: description;
     margin: 0;
 }
@@ -51,19 +63,23 @@
     border-radius: 50%;
     object-fit: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
     margin-right: 24px;
-    margin-left: auto;
 }
 
+
 @media screen and (max-width:480px) {
+
     .profile{
-        background-color: pink;
+        background-color: black;
         flex-direction: column;
     }
 
     .profile__info{
         display: flex;
         flex-wrap: wrap;
+        align-items: baseline;
         justify-content: center;
         width: 100%;
     }
@@ -71,12 +87,22 @@
     .profile__description{
         width: 100%;
         text-align: center;
-
+        padding-bottom: 36px;
+        font-size: 14px;
     }
 
     .profile__add-button{
-        margin: 0;
         width: 100%;
+        text-align: center;
+        border: none;
     }
+
+    .profile__title{
+        font-size: 22px;
+        padding-top: 30px;
+        padding-right: 10px;
+    }
+
+    
     
 }

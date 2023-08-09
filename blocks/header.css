@@ -1,3 +1,12 @@
 .header {
     margin-top: 45px;
 }
+
+@media screen and (max-width:480px) {
+
+    .header{
+        display: flex;
+        justify-content: flex-start;
+        max-width: 282px;
+    }
+}
