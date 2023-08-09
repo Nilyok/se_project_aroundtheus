@@ -55,6 +55,7 @@
     font-weight: 400;
     grid-area: description;
     margin: 0;
+    padding-top: 16px;
 }
 
 .profile__image {
@@ -89,6 +90,7 @@
         text-align: center;
         padding-bottom: 36px;
         font-size: 14px;
+        padding-top: 0px;
     }
 
     .profile__add-button{
