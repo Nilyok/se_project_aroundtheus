@@ -1,13 +1,29 @@
-.page__footer {
+.footer {
     color: white;
     padding-top: 67px;
+    max-width: 880px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer__title {
+    size: 18px;
+    color: rgba(84, 84, 84, 1);
 }
 
 @media screen and (max-width:480px) {
 
-    .page__footer{
+    .footer {
         display: flex;
         justify-content: flex-start;
         max-width: 282px;
+    }
+
+    .footer__title {
+        size: 14px;
+        padding-left: 19px;
     }
 }

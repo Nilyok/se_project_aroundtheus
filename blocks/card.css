@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+    max-width: 282px;
 }
 
 
 .card__image {
-    width: 282px;
-    height: 282px;
+    object-fit: contain;
+    object-fit: 100%;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -16,20 +17,21 @@
     background-color: white;
     color: black;
     max-width: 282px;
-    padding-left: 21px;
-    padding-right: 21px;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
     border-radius: 0px 0px 10px 10px;
-    
+    box-sizing: border-box;
 }
 
 .card__like-button {
-    background: transparent url(../images/like-inactive.svg) center;
+    background: transparent url(../images/disabled-like-button.png) center no-repeat;
     width: 21px;
     height: 18px;
     border: none;
     cursor: pointer;
+    background-repeat: no-repeat;
+    
 }
 
 .card__title {
@@ -41,12 +43,17 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin: 0;
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:480px) {
     .card {
         grid-template-columns: 1fr;
     }
 
 
+}
+
+.card__like-button:hover {
+    opacity: 50%;
 }

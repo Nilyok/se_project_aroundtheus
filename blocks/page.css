@@ -9,8 +9,6 @@
     width: 100%;
     position: relative;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .page__content {
@@ -24,9 +22,11 @@
     .page__section {
         width: 100%;
         position: relative;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        align-items: center;
+    }
+
+    .page__section-img {
+        width: 126px;
+        height: 24px;
     }
 
 }

@@ -17,7 +17,7 @@
 }
 
 .profile__edit-button {
-    background: transparent url(../images/Edit\ Button.svg) center no-repeat;
+    background: transparent url(../images/Edit\ Button.png) center no-repeat;
     height: 24px;
     width: 24px;
     grid-area: button;
@@ -28,11 +28,12 @@
 }
 
 .profile__add-button {
-    background: transparent url(../images/Add\ Button.svg) center no-repeat;
+    background: transparent url(../images/Add\ Button.png) center no-repeat;
     width: 150px;
     height: 50px;
     grid-area: button;
     border-color: white;
+    border-radius: 2%;
     margin-left: auto;
     cursor: pointer;
     opacity: 1;
@@ -56,6 +57,10 @@
     grid-area: description;
     margin: 0;
     padding-top: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 880px;
 }
 
 .profile__image {
@@ -74,7 +79,15 @@
 
     .profile{
         background-color: black;
-        flex-direction: column;
+        display: flex;
+        max-width: 282px;
+        padding-bottom: 37px;
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
     .profile__info{
@@ -88,23 +101,45 @@
     .profile__description{
         width: 100%;
         text-align: center;
+        line-height: 1.2;
         padding-bottom: 36px;
         font-size: 14px;
-        padding-top: 0px;
+        padding-top: 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 282px;
     }
 
-    .profile__add-button{
-        width: 100%;
-        text-align: center;
-        border: none;
+    .profile__image {
+        margin-right: 0;
+    }
+
+    .profile__edit-button {
+        width: 18px;
+        height: 18px;
+        padding: 0 0 0 0;
+        background-size: cover;
+    }
+
+    .profile__add-button {
+        margin-left: 0px;
+        background-size: cover;
     }
 
     .profile__title{
         font-size: 22px;
         padding-top: 30px;
         padding-right: 10px;
+        line-height: 1.2;
     }
 
-    
+.profile__add-button:hover {
+    opacity: 60%;
+}    
+
+.profile__edit-button:hover {
+    opacity: 60%;
+}
     
 }
