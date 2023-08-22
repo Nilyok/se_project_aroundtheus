@@ -5,9 +5,9 @@
 }
 
 .page__section {
+    display: grid;
     max-width: 880px;
     width: 100%;
-    position: relative;
     margin: 0 auto;
 }
 
@@ -23,12 +23,7 @@
         width: 100%;
         position: relative;
     }
-
-    .page__section-img {
-        width: 126px;
-        height: 24px;
-    }
-
+   
 }
 
     

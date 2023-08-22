@@ -25,7 +25,7 @@
 }
 
 .card__like-button {
-    background: transparent url(../images/disabled-like-button.png) center no-repeat;
+    background: transparent url(../images/disabled-like-button.svg) center no-repeat;
     width: 21px;
     height: 18px;
     border: none;
@@ -44,13 +44,13 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     margin: 0;
+    max-width: 219px;
 }
 
 @media screen and (max-width:480px) {
     .card {
         grid-template-columns: 1fr;
     }
-
 
 }
 

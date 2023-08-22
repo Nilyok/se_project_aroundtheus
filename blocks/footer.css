@@ -1,29 +1,30 @@
 .footer {
     color: white;
-    padding-top: 67px;
     max-width: 880px;
     width: 100%;
     position: relative;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 67px;
+    padding-bottom: 60px;
 }
 
 .footer__title {
-    size: 18px;
+    font-size: 18px;
     color: rgba(84, 84, 84, 1);
+    margin: 0 auto;
 }
 
 @media screen and (max-width:480px) {
 
     .footer {
-        display: flex;
-        justify-content: flex-start;
-        max-width: 282px;
+        padding-top: 48px;
+        padding-bottom: 36px;
     }
 
     .footer__title {
-        size: 14px;
-        padding-left: 19px;
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 auto;
     }
 }

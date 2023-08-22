@@ -1,6 +1,5 @@
 .cards {
     padding-top: 51px;
-    width: 880px;
 }
 
 .cards__list {
@@ -15,6 +14,12 @@
 @media screen and (max-width:480px) {
     .cards {
         padding-top: 37px;
-        width: 0%;
+    }
+
+    .cards__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

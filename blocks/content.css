@@ -2,20 +2,7 @@
     justify-content: center;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
-    margin: auto;
 }
 
 
-@media all and (max-width: 1280px) {
-    div {
-        width: 880px;
-    }
 
-}
-    
-@media all and (max-width: 480px) {
-    div {
-        width: 320px;
-    }
-}
