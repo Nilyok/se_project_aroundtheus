@@ -1,6 +1,6 @@
 .header {
     max-width: 880px;
-    padding: 45px 41px;
+    padding: 45px 0px;
     width: 100%;
     position: relative;
     margin: 0 auto;
@@ -26,6 +26,14 @@
         max-width: 320px;
         width: 100%;
         padding: 28px 32px;
+        box-sizing: content-box;
+        padding: 0;
+    }
+
+    .header__img{
+        padding: 28px 167px 32px 27px;
+        width: 126px;
+        height: 24px;
     }
 
 }

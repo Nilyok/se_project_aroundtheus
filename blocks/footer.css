@@ -11,7 +11,6 @@
 .footer__title {
     font-size: 18px;
     color: rgba(84, 84, 84, 1);
-    margin: 0 auto;
 }
 
 @media screen and (max-width:480px) {
