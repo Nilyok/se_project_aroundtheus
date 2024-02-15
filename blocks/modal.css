@@ -129,13 +129,3 @@
         padding-right: 22px; */
     }
 }
-
-@media screen and (max-width: 320px) {
-    .modal {
-        padding: 0 10px;
-    }
-}
-
-.modal__form {
-    max-width: 358px;
-}
