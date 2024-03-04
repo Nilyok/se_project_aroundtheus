@@ -120,12 +120,13 @@
         font-size: 14px;
     }
     .modal__form-title {
-        /* padding-left: 22px;
-        padding-right: 22px; */
+        padding-left: 22px;
+        padding-right: 22px;
     }
 
     .modal__form-description {
-        /* padding-left: 22px;
-        padding-right: 22px; */
+        padding-left: 22px;
+        padding-right: 22px;
     }
 }
+
