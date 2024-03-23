@@ -101,13 +101,15 @@
         height: 322px;
         margin-left: 19px;
         margin-right: 19px;
+        padding-left: 19px;
+        padding-right: 19px;
     }
 
     .modal__heading {
         max-width: 238px;
         font-size: 18px;
     }
-    
+
     .modal__form {
         /* max-width: 238px; */
         width: 100%;
