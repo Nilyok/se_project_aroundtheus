@@ -1,0 +1,30 @@
+.footer {
+    color: white;
+    max-width: 880px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 67px;
+    padding-bottom: 60px;
+}
+
+.footer__title {
+    font-size: 18px;
+    color: rgba(84, 84, 84, 1);
+    margin: 0 auto;
+}
+
+@media screen and (max-width:480px) {
+
+    .footer {
+        padding-top: 48px;
+        padding-bottom: 36px;
+        padding-left: 19px;
+    }
+
+    .footer__title {
+        font-size: 14px;
+        display: flex;
+        justify-content: flex-start;
+    }
+}

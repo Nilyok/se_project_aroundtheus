@@ -1,0 +1,136 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    /* padding: 0 0p; */
+    /* display: flex; */
+    display: none;
+}
+
+.modal__form {
+    max-width: 358px;
+}
+
+.modal__input {
+    max-width: 358px;
+    width: 100%;
+    height: 27px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    line-height: 17px;
+    color: black;
+}
+
+.modal__description {
+    max-width: 358px;
+    padding-top: 30px;
+    width: 100%;
+    height: 27px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    line-height: 17px;
+    color: black;
+}
+
+.modal_opened {
+    display: flex;
+
+}
+.modal__container {
+    width: 430px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 36px; */
+    background-color: #fff;
+    margin: auto;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.modal__heading {
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+    max-width: 358px;
+    width: 100%;
+    padding-top: 34px;
+    margin: 0 auto;
+}
+
+.modal__close {
+    border: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    bottom: calc(100% + 5px);
+    left: calc(100% + 5px);
+    background-image: url(../images/Close\ Icon\ Modal.svg);
+    background-color: transparent;
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.modal__button {
+    max-width: 358px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 16px 16px;
+    margin-top: 48px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 2px;
+}
+
+@media screen and (max-width:480px) {
+
+    .modal__container {
+        /* width: 282px; */
+        width: 100%;
+        height: 322px;
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+
+    .modal__heading {
+        max-width: 238px;
+        font-size: 18px;
+    }
+    
+    .modal__form {
+        /* max-width: 238px; */
+        width: 100%;
+    }
+
+    .modal__close {
+        width: 26px;
+        height: 26px;
+        left: calc(100% - 31px);
+        bottom: calc(100% + 27px);
+    }
+
+    .modal__button {
+        font-size: 14px;
+    }
+    .modal__form-title {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .modal__form-description {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+}
+
