@@ -96,6 +96,7 @@
         margin: 0 auto;
         flex-wrap: wrap;
         align-items: center;
+        padding-left: 19px;
     }
 
     .profile__info{

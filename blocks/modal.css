@@ -101,6 +101,8 @@
         height: 322px;
         margin-left: 19px;
         margin-right: 19px;
+        padding-left: 19px;
+        padding-right: 19px;
     }
 
     .modal__heading {
