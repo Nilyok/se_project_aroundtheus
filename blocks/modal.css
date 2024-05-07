@@ -2,13 +2,15 @@
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
+    bottom: 0;
+    padding: 0 19px;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
-    /* padding: 0 0p; */
-    /* display: flex; */
-    display: none;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.5s linear;
 }
 
 .modal__form {
@@ -40,15 +42,16 @@
 
 .modal_opened {
     display: flex;
-
+    visibility: visible;
+    opacity: 1;
 }
+
 .modal__container {
     width: 430px;
     height: 330px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    /* padding: 36px; */
     background-color: #fff;
     margin: auto;
     border-radius: 10px;
@@ -113,7 +116,7 @@
 }
   
   /* Modifier for the close button in the image preview modal */
-  .modal__close_image-preview {
+.modal__close_image-preview {
     bottom: calc(100% + 30px);
     left: calc(100% - 30px);
 }
@@ -123,22 +126,22 @@
     height: auto;
     max-height: 100%;
     object-fit: contain; /* This will ensure that the aspect ratio is maintained */
-  }
+}
   
-  .modal__image-preview {
+.modal__image-preview {
     object-fit: contain;
     max-height: 75vh;
     max-width: 75vw;
     width: auto;
     height: auto;
-  }
+}
   
-  .modal__image-title {
+.modal__image-title {
     color: #fff;
     width: 100%;
     padding: 10px;
     margin: 40px;
-  }
+}
 
 @media screen and (max-width:480px) {
 

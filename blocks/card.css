@@ -68,11 +68,18 @@
     transition: transform 0.3s ease;
     flex-shrink: 0;
     cursor: pointer;
-  }
+}
   
-  .card__delete-button:hover {
+.card__delete-button:hover {
     transform: scale(1.4);
-  }
+}
+
+#card__preview-button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #000000;
+}
 
 @media screen and (max-width:480px) {
     .card {
