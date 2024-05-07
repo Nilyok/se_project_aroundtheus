@@ -3,6 +3,7 @@
     flex-direction: column;
     list-style: none;
     max-width: 282px;
+    position: relative;
 }
 
 
@@ -66,7 +67,7 @@
     padding: 0;
     transition: transform 0.3s ease;
     flex-shrink: 0;
-    cursor: pointer; /* Ensures the cursor changes to a pointer on hover */
+    cursor: pointer;
   }
   
   .card__delete-button:hover {
