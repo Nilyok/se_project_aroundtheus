@@ -6,6 +6,8 @@
     bottom: 0;
     padding: 0 19px;
     background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
     z-index: 999;
     display: flex;
     visibility: hidden;
@@ -97,36 +99,43 @@
 }
 
 .modal__container_image-preview {
-    margin-bottom: 20px; /* Add more margin at the top as necessary */
+    margin-bottom: 20px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-left: 40px;
-    padding-right: 40px; /* Right padding */
+    padding-right: 40px;
     background-color: transparent;
     max-width: 75vw;
     max-height: 75vh;
-    width: auto; /* Adjust based on content */
-    height: auto; /* Adjust based on content */
+    width: auto; 
+    height: auto;
 }
 
 .modal__close:hover {
-    opacity: 0.7; /* Adjust the value as needed for desired effect */
+    opacity: 0.7; 
 }
   
-  /* Modifier for the close button in the image preview modal */
+
 .modal__close_image-preview {
     position: absolute;
     top: -45px;
     right: -45px;
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: calc(100% + 5px);
+    background-color: transparent;
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .modal__image {
     width: 100%;
     height: auto;
     max-height: 100%;
-    object-fit: contain; /* This will ensure that the aspect ratio is maintained */
+    object-fit: contain; 
 }
   
 .modal__image-preview {
@@ -189,6 +198,7 @@
         height: 30px;
         position: absolute;
         left: calc(100% - 15px);
+
     }
 
 
