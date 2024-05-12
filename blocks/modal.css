@@ -47,12 +47,8 @@
 }
 
 .modal__container {
-    /* width: 430px;
-    height: 330px; */
     position: relative;
-    /* display: flex; */
     flex-wrap: wrap;
-    /* background-color: #fff; */
     margin: auto;
     border-radius: 10px;
     justify-content: center;
@@ -97,13 +93,6 @@
 }
 
 .modal__container_image-preview {
-    /* margin-bottom: 20px;  */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px; */
     background-color: transparent;
     max-width: 75vw;
     max-height: 75vh;
