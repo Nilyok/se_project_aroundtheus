@@ -70,16 +70,6 @@ function renderCard(cardData, cardListEl) {
     cardListEl.prepend(cardElement);
   }
 
-// function openPreviewModal(imageSrc, imageTitle) {
-//     previewImage.src = imageSrc;
-//     previewTitle.textContent = imageTitle;
-//     previewModal.classList.add("modal_opened");
-// }
-
-// function closePreviewModal() {
-//     previewModal.classList.remove("modal_opened");
-// }
-
 function getCardElement(cardData) {
     const cardElement = cardTemplate.cloneNode(true);
     const cardImageEl = cardElement.querySelector(".card__image");
@@ -126,7 +116,7 @@ function handleAddCardFormSubmit(e) {
     const name = cardTitleInput.value;
     const link = cardUrlInput.value;
     renderCard({ name, link }, cardListEl);
-    closePopup(addCardModal);
+    closePopup(profileAddmodal);
     e.target.reset();
 }
   
