@@ -52,7 +52,7 @@ const cardUrlInput = addCardFormElement.querySelector(".modal__input_type_url");
 const previewModal = document.getElementById("modal__preview");
 const previewImage = previewModal.querySelector(".modal__image-preview");
 const previewTitle = previewModal.querySelector(".modal__image-title");
-const closeButton = previewModal.querySelector(".modal__close");
+const previewCloseButton = previewModal.querySelector(".modal__close");
 
 
 
@@ -93,7 +93,7 @@ function getCardElement(cardData) {
         previewImage.src = cardData.link;
         previewImage.alt = cardData.name;
         previewTitle.textContent = cardData.name;
-        previewModal.classList.add("modal_opened");
+        openPopup(previewModal);
     });
     
     cardImageEl.src = cardData.link;
@@ -157,7 +157,7 @@ closeButtons.forEach((button) => {
     });
 });
 
-closeButton.addEventListener("click", () => {
+previewCloseButton.addEventListener("click", () => {
     closePopup(previewModal);
 });
 

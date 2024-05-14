@@ -146,7 +146,7 @@
     margin: 40px; */
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:580px) {
 
     .modal__container {
         width: 100%;
@@ -189,11 +189,19 @@
     .modal__close_image-preview {
         width: 30px;
         height: 30px;
-        position: absolute;
-        left: calc(100% - 15px);
-
+        left: calc(100% + 14px);
+        top: -30px;
     }
 
+    .modal__image-title {
+        margin: 0px;
+        padding-top: 10px;
+    }
+
+    .modal__image-preview {
+        max-width: 240px;
+        max-width: 299px;
+    }
 
 }
 
