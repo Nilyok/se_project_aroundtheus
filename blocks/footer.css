@@ -14,7 +14,7 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:630px) {
 
     .footer {
         padding-top: 48px;
