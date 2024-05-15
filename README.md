@@ -11,9 +11,7 @@
 
 - 📫 How to reach me **nilyok.ch@gmail.com**
 
-- 📄 Know about my experiences [www.linkedin.com/in/ chanoknun-nilyok-ab203b11b](www.linkedin.com/in/ chanoknun-nilyok-ab203b11b)
-
-- ⚡ Fun fact **I think I**
+- ⚡ Fun fact **I believe I excel in communication**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
