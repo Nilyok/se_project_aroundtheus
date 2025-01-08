@@ -147,3 +147,26 @@ closeButtons.forEach((button) => {
 });
 
 initialCards.forEach((cardData) => renderCard(cardData, cardListEl));
+
+function closeOpenModal() {
+    const openedModal = document.querySelector('.modal_opened');
+    if (openedModal) {
+        closePopup(openedModal);
+    }
+}
+
+/* Close with Click */
+document.querySelectorAll('.modal').forEach(modal => {
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closePopup(modal);
+        }
+    });
+});
+
+/* Close with Esc Key */
+document.addEventListener('keydown', (event) => {
+    if (event.key === "Escape") {
+        closeOpenModal();
+    }
+});
