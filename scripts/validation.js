@@ -72,7 +72,6 @@ function toggleButtonState(formEl, options) {
 function setEventListeners (formEl, options) {
     const {inputSelector} = options;
     const inputEls = [...formEl.querySelectorAll(inputSelector)];
-    const submitButton = formEl.querySelector('.popup__button');
 
     inputEls.forEach((inputEl) => {
         inputEl.addEventListener("input", (e) => {
