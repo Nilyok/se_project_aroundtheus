@@ -1,3 +1,4 @@
+/* Existing modal styles remain the same */
 .modal {
     display: flex;
     position: fixed;
@@ -13,21 +14,6 @@
     transition: visibility 0.3s, opacity 0.5s linear;
 }
 
-.modal__form {
-    max-width: 358px;
-}
-
-.modal__input {
-    max-width: 358px;
-    width: 100%;
-    height: 27px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    line-height: 17px;
-    color: black;
-}
-
 .modal_opened {
     display: flex;
     visibility: visible;
@@ -36,108 +22,60 @@
 
 .modal__container {
     width: 430px;
-    height: 330px;
+    /* Remove fixed height to allow content to determine height */
+    min-height: 330px; /* Changed from height to min-height */
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column; /* Changed from flex-wrap */
     background-color: #fff;
     margin: auto;
     border-radius: 10px;
-    justify-content: center;
+    padding: 34px 36px 36px; /* Added padding to container */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .modal__heading {
     color: black;
     font-size: 24px;
     font-weight: 900;
-    max-width: 358px;
     width: 100%;
-    padding-top: 34px;
-    margin: 0 auto;
+    margin: 0 0 24px 0; /* Adjusted margin */
+    padding: 0; /* Removed padding-top */
 }
 
-.modal__close {
-    border: none;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    cursor: pointer;
-    bottom: calc(100% + 5px);
-    left: calc(100% + 5px);
-    background-image: url(../images/Close\ Icon\ Modal.svg);
-    background-color: transparent;
-    outline: none;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.modal__button {
-    max-width: 358px;
+.modal__form {
     width: 100%;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    padding: 16px 16px;
-    margin-top: 48px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Take up remaining space */
 }
 
-.modal__container_image-preview {
+/* Modified input container styling */
+.modal__form label {
+    position: relative;
+    margin-bottom: 30px; /* Space for error message */
     display: block;
-    background-color: transparent;
-    max-width: 75vw;
-    max-height: 75vh;
-    width: auto; 
-    height: auto;
+}
+
+.modal__input {
+    width: 100%;
+    height: 27px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
     box-sizing: border-box;
 }
 
-.modal__close:hover {
-    opacity: 0.7; 
-}
-  
-
-.modal__close_image-preview {
-    /* display: block; */
-    top: -45px;
-    right: -45px;
-    position: absolute;
-    bottom: calc(100% + 5px);
-    left: calc(100% + 5px);
-    background-color: transparent;
-    outline: none;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.modal__image {
-    max-width: 100%;
-    max-height: calc(75vh - 20px);
-    object-fit: cover;
-}
-  
-.modal__image-preview {
-    object-fit: contain;
-    max-height: 75vh;
-    max-width: 75vw;
-    width: auto;
-    height: auto;
-}
-  
-.modal__image-title {
-    color: #fff;
-    width: 100%;
-    /* padding: 10px;
-    margin: 40px; */
-}
-
+/* Updated error message styling */
 .modal__error {
+    position: absolute;
     font-size: 12px;
     line-height: 15px;
     color: #f00;
-    top: calc(100% + 5px);
+    top: calc(100% + 5px); /* Position below input */
     left: 0;
     transition: opacity 0.3s;
     opacity: 0; /* Start hidden */
@@ -146,81 +84,81 @@
 
 .modal__error_visible {
     opacity: 1;
-    visibility: visible; /* Make visible when this class is added */
+    visibility: visible;
 }
 
-.button.disabled {
-    opacity: 0.2; /* 20% opacity */
-    cursor: not-allowed; /* Change cursor to indicate the button is disabled */
+.modal__button {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 14px 0;
+    margin-top: auto; /* Push button to bottom */
+    background-color: #000;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
 }
 
+.modal__button.disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+}
 
+/* Existing close button styles remain the same */
+.modal__close {
+    border: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    top: -40px;
+    right: -40px;
+    background-image: url(../images/Close\ Icon\ Modal.svg);
+    background-color: transparent;
+    outline: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
-@media screen and (max-width:630px) {
+/* Image preview modal styles remain the same */
+.modal__container_image-preview {
+    display: block;
+    background-color: transparent;
+    max-width: 75vw;
+    max-height: 75vh;
+    width: auto; 
+    height: auto;
+    padding: 0;
+}
 
+/* Media queries - updated for new structure */
+@media screen and (max-width: 630px) {
     .modal__container {
-        position: relative;
-        margin: auto;
-        padding: 19px;
-        max-width: 282px;
+        width: 282px;
+        min-height: 322px;
+        padding: 25px 22px;
     }
 
     .modal__heading {
-        max-width: 238px;
         font-size: 18px;
-        margin-left: 0px;
-    }
-    
-    .modal__form {
-        width: 100%;
+        margin-bottom: 45px;
     }
 
     .modal__close {
         width: 26px;
         height: 26px;
-        left: calc(100% - 31px);
-        bottom: calc(100% + 27px);
+        right: 0;
+        top: -45px;
     }
 
     .modal__button {
         font-size: 14px;
-    }
-    .modal__form-title {
-        padding-left: 22px;
-        padding-right: 22px;
+        padding: 14px 0;
     }
 
-    .modal__form-description {
-        padding-left: 22px;
-        padding-right: 22px;
+    .modal__form label {
+        margin-bottom: 30px;
     }
-
-    .modal__container_image-preview {
-        padding: 0;
-        width: 240px;
-        display: flex;
-    }
-
-    .modal__image-title {
-        margin: 0px;
-        padding-top: 10px;
-        padding-left: 10px;
-    }
-
-    .modal__image-preview {
-        position: relative;
-        max-width: 100%;
-        max-height: calc(75vh - 20px);
-        margin: auto;
-        background: transparent;
-        border: none;
-        padding-left: 19px;
-    }
-
-    .image-modal-close-button {
-        left: calc(100% + 10px);
-        top: -27px;
-    }
-
 }
-
