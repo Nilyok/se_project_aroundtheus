@@ -1,0 +1,10 @@
+.todo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo__text_completed {
+  text-decoration: line-through;
+  color: gray;
+}

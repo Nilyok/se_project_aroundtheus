@@ -1,26 +1,31 @@
-<h1 align="center">Hi 👋, I'm Chanoknun Nilyok(Magnum)</h1>
-<h3 align="center">I'm software engineer student</h3>
+# Project 7: Checklist – se_project_aroundtheus
 
-- 🔭 I’m currently working on [Project 3: Around The U.S.](https://nilyok.github.io/se_project_aroundtheus/)
+## 📋 Project Description
+This project is an interactive web application called **Checklist**, part of the _se_project_aroundtheus_ assignment. It allows users to manage two types of content:
 
-- 🌱 I’m currently learning **Objects on javascripts**
+- A card-based photo gallery showcasing scenic places.
+- A to-do list where users can add, mark, and delete tasks.
 
-- 👨‍💻 All of my projects are available at [https://github.com/Nilyok](https://github.com/Nilyok)
+Users can edit their profile, add new places to the gallery with titles and image links, and interact with dynamic elements such as popups and form validation. This project emphasizes modular JavaScript structure, DOM manipulation, form validation, and dynamic rendering of components.
 
-- 💬 Ask me about **HTML, CSS, Javascripts, make connection**
+## 🛠️ Technologies & Techniques Used
+- **HTML5** – Semantic structure for accessible content.
+- **CSS3** – Responsive layout using Flexbox and BEM methodology.
+- **JavaScript (ES6+)** – Modular components with classes.
+  - `Card.js` for image cards
+  - `FormValidator.js` for validating forms
+  - `Todo.js` for task item creation
+- **DOM Manipulation** – Dynamically rendering cards and tasks using JavaScript templates.
+- **Form Validation** – Custom validation logic using reusable configuration.
+- **Responsive Design** – Works across multiple screen sizes.
+- **Git** – Version control for collaboration and tracking changes.
+- **GitHub Pages** – Deployment of the live project.
 
-- 📫 How to reach me **nilyok.ch@gmail.com**
+## 📸 Screenshots
+> ![alt text](image.png)
+> - A sample card being added
+> - The to-do section in action
+> - Any modals or validation examples
 
-- ⚡ Fun fact **I believe I excel in communication**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/www.linkedin.com/in/ chanoknun-nilyok-ab203b11b" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="www.linkedin.com/in/ chanoknun-nilyok-ab203b11b" height="30" width="40" /></a>
-<a href="https://fb.com/www.facebook.com/chanoknun.nilyok" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="www.facebook.com/chanoknun.nilyok" height="30" width="40" /></a>
-<a href="https://instagram.com/www.instagram.com/magnum_kiss" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="www.instagram.com/magnum_kiss" height="30" width="40" /></a>
-<a href="https://discord.gg/magnum_kiss#3822" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="magnum_kiss#3822" height="30" width="40" /></a>
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> </p>
-
+## 🌐 Live Link
+[Visit the project on GitHub Pages](https://github.com/Nilyok)

@@ -1,8 +1,7 @@
 /* -------------------------------------------------------------------------- */
 /*                               Import  FormValidator                        */
 /* -------------------------------------------------------------------------- */
-import FormValidator from "./FormValidators.js"; 
-
+import FormValidator from "../components/FormValidator.js";
 
 const config = {
   formSelector: ".modal__form",
@@ -23,7 +22,7 @@ cardValidator.enableValidation();
 /*                               Import  Card                                 */
 /* -------------------------------------------------------------------------- */
 
-import Card from "./Card.js";
+import Card from "../components/Card.js";
 
 const initialCards = [
     {
@@ -57,15 +56,26 @@ const initialCards = [
         link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
     };
 
+// /* -------------------------------------------------------------------------- */
+// /*                                  Import To Do                              */
+// /* -------------------------------------------------------------------------- */
+
+// import Todo from "../components/Todo.js";
+// import { initialTodos } from "../utils/constants.js";
+
+// initialTodos.forEach((todoData) => {
+//   const todo = new Todo(todoData, "#todo-template");
+//   document.querySelector(".cards__list").append(todo.getView());
+// });
+
 
 /* -------------------------------------------------------------------------- */
 /*                                  Elements                                  */
 /* -------------------------------------------------------------------------- */
 const profileEditButton = document.querySelector("#profile-edit-button");
-const profileEditmodal = document.querySelector("#profile-edit-modal");
-const profileAddmodal = document.querySelector("#add-card-modal");
+const profileEditModal = document.querySelector("#profile-edit-modal");
+const profileAddModal = document.querySelector("#add-card-modal");
 const closeButtons = document.querySelectorAll('.modal__close');
-const modalAddCloseButton = document.querySelector("#addCard-modal-close-button");
 const profileTitle = document.querySelector(".profile__title");
 const profileDescription = document.querySelector(".profile__description");
 const profileTitleInput = document.querySelector("#profile-title-input");
@@ -74,7 +84,7 @@ const profileForm = document.forms["profile-form"];
 /* ------------------------------ Card Template ----------------------------- */
 const cardListEl = document.querySelector(".cards__list");
 /* ------------------------------ Add New Card ------------------------------ */
-const addNewCardbutton = document.querySelector(".profile__add-button")
+const addNewCardButton = document.querySelector(".profile__add-button")
 const addCardFormElement = document.forms["add-card-form"];
 const cardTitleInput = addCardFormElement.querySelector(".modal__input_title");
 const cardUrlInput = addCardFormElement.querySelector(".modal__input_type_url");
@@ -120,10 +130,8 @@ function handleImageClick(name, link) {
 }
 
 function renderCard(cardData, cardListEl) {
-  console.log("Rendering card:", cardData); 
   const card = new Card(cardData, "#card-template", handleImageClick);
   const cardElement = card.getView();
-  console.log("Generated cardElement:", cardElement); 
   cardListEl.prepend(cardElement);
 }
 
@@ -165,7 +173,7 @@ function handleProfileEditSubmit(e) {
     e.preventDefault();
     profileTitle.textContent = profileTitleInput.value;
     profileDescription.textContent = profileDescriptionInput.value;
-    closePopup(profileEditmodal);
+    closePopup(profileEditModal);
     profileValidator.resetValidation(); // Reset & disable
 }
 
@@ -174,7 +182,7 @@ function handleAddCardFormSubmit(e) {
     const name = cardTitleInput.value;
     const link = cardUrlInput.value;
     renderCard({ name, link }, cardListEl);
-    closePopup(profileAddmodal);
+    closePopup(profileAddModal);
     e.target.reset();
     cardValidator.resetValidation(); // Reset errors and disable button
 }
@@ -186,14 +194,14 @@ profileEditButton.addEventListener("click", () => {
     profileTitleInput.value = profileTitle.textContent;
     profileDescriptionInput.value = profileDescription.textContent;
     profileValidator.resetValidation();
-    openPopup(profileEditmodal);
+    openPopup(profileEditModal);
 });
 
 profileForm.addEventListener("submit", handleProfileEditSubmit);
 addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
 
-addNewCardbutton.addEventListener("click", () => {
-    openPopup(profileAddmodal);
+addNewCardButton.addEventListener("click", () => {
+    openPopup(profileAddModal);
 });
 
 closeButtons.forEach((button) => {

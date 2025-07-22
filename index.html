@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Around The U.S</title>
-    <link href="./pages/index.css" rel="stylesheet" />
+    <link href="./blocks/index.css" rel="stylesheet" />
   </head>
 
   <body class="page">
@@ -45,6 +45,11 @@
             <h2 class="visually-hidden"></h2>
             <ul class="cards__list">
             </ul>
+        </section>
+
+        <section class="todos page__section">
+            <h2 class="todos__title"></h2>
+            <ul class="todos__list"></ul>
         </section>
 
         <footer class="footer">
@@ -93,11 +98,7 @@
               >error message</span
             >
           </label>
-          <!-- If any field doesn't pass validation, 
-                    the "Save" button should be inactive. 
-                    If both fields pass validation, 
-                    then they should be active. 
-                    Use the colors from the design for the inactive buttons. -->
+      
           <!-- <label class=""> -->
           <button class="button modal__button " type="submit">
             Save
@@ -145,11 +146,6 @@
             >
           </label>
 
-          <!-- If any field doesn't pass validation, 
-                            the "Save" button should be inactive. 
-                            If both fields pass validation, 
-                            then it should be active. 
-                            Inactive button colors are the same as for the "Edit profile" form. -->
           <!-- <label class=""> -->
           <button class="button modal__button " type="submit">
             Create
@@ -167,10 +163,20 @@
               id="image-modal-close-button"
               type="button"
           ></button>
-          <img src="" alt="" class="modal__image-preview" />
+          <img src="./images/placeholder.jpg"
+          alt="Preview image" 
+          class="modal__image-preview" />
           <p class="modal__image-title"></p>
       </div>
     </div>
+
+    <template id="todo-template">
+      <li class="todo">
+        <input type="checkbox" class="todo__checkbox" />
+        <span class="todo__text"></span>
+        <button class="todo__delete">Delete</button>
+      </li>
+    </template>
 
     <template id="card-template">
       <li class="card">
@@ -185,6 +191,6 @@
       </li>
     </template>
 
-    <script defer src="./components/index.js" type="module"></script>
+    <script src="./pages/index.js" type="module"></script>
   </body>
 </html>
