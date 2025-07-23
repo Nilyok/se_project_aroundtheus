@@ -101,10 +101,11 @@
     cursor: pointer;
 }
 
-.modal__button.disabled {
-    opacity: 0.2;
-    cursor: not-allowed;
+.modal__button_disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
 }
+
 
 /* Existing close button styles remain the same */
 .modal__close {

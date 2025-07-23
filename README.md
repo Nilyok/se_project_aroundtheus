@@ -4,7 +4,6 @@
 This project is an interactive web application called **Checklist**, part of the _se_project_aroundtheus_ assignment. It allows users to manage two types of content:
 
 - A card-based photo gallery showcasing scenic places.
-- A to-do list where users can add, mark, and delete tasks.
 
 Users can edit their profile, add new places to the gallery with titles and image links, and interact with dynamic elements such as popups and form validation. This project emphasizes modular JavaScript structure, DOM manipulation, form validation, and dynamic rendering of components.
 
@@ -14,7 +13,6 @@ Users can edit their profile, add new places to the gallery with titles and imag
 - **JavaScript (ES6+)** – Modular components with classes.
   - `Card.js` for image cards
   - `FormValidator.js` for validating forms
-  - `Todo.js` for task item creation
 - **DOM Manipulation** – Dynamically rendering cards and tasks using JavaScript templates.
 - **Form Validation** – Custom validation logic using reusable configuration.
 - **Responsive Design** – Works across multiple screen sizes.
