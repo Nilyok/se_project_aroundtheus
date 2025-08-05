@@ -5,26 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Around The U.S</title>
-    <link href="./blocks/index.css" rel="stylesheet" />
   </head>
 
   <body class="page">
     <div class="page__content">
       <header class="header">
-        <img
-          src="./images/logo.svg"
-          alt="Around The U.S logo"
-          class="header__img"
-        />
+        <img src="" 
+        alt="Around The U.S logo" 
+        class="header__img" />
       </header>
 
       <main class="content">
         <section class="profile page__section">
-          <img
-            src="./images/jacques-cousteau.png"
-            alt="Avatar"
-            class="profile__image"
-          />
+          <img src="" 
+          alt="Avatar" 
+          class="profile__image" />
           <div class="profile__info">
             <h1 class="profile__title">jacques Cousteau</h1>
             <button
@@ -68,7 +63,7 @@
               class="modal__input"
               type="text"
               id="profile-title-input"
-              name="name"
+              name="profile-title"
               minlength="2"
               maxlength="40"
               required
@@ -83,7 +78,7 @@
               class="modal__input"
               type="text"
               id="profile-description-input"
-              name="Description"
+              name="profile-description"
               minlength="2"
               maxlength="200"
               required
@@ -98,7 +93,6 @@
           <button class="button modal__button " type="submit">
             Save
           </button>
-          <!-- </label> -->
         </form>
       </div>
     </div>
@@ -116,7 +110,7 @@
             <input
               class="modal__input  modal__input_title"
               type="text"
-              name="title"
+              name="card-title"
               id="add-card-title"
               minlength="1"
               maxlength="30"
@@ -132,7 +126,7 @@
               class="modal__input modal__input_type_url"
               type="url"
               id="add-card-url"
-              name="description"
+              name="card-url"
               required
               placeholder="Image URL..."
             />
@@ -145,7 +139,6 @@
           <button class="button modal__button " type="submit">
             Create
           </button>
-          <!-- </label>         -->
         </form>
       </div>
     </div>
@@ -158,7 +151,7 @@
               id="image-modal-close-button"
               type="button"
           ></button>
-          <img src="./images/placeholder.jpg"
+          <img src="" 
           alt="Preview image" 
           class="modal__image-preview" />
           <p class="modal__image-title"></p>
@@ -167,9 +160,9 @@
 
     <template id="card-template">
       <li class="card">
-        <img src="" class="card__image" alt="no image" />
+        <img class="card__image" src="" alt="Card image" />
         <button class="card__delete-button">
-          <img src="./images/Trash.svg" alt="Delete" />
+          <img src="" alt="Delete" />
         </button>
         <div class="card__description">
           <h2 class="card__title"></h2>
@@ -178,6 +171,5 @@
       </li>
     </template>
 
-    <script src="./pages/index.js" type="module"></script>
   </body>
 </html>

@@ -1,29 +1,38 @@
-# Project 7: Checklist – se_project_aroundtheus
+# 📸 Project 8: Checklist – _se_project_aroundtheus_
 
-## 📋 Project Description
-This project is an interactive web application called **Checklist**, part of the _se_project_aroundtheus_ assignment. It allows users to manage two types of content:
+## 📝 Overview
 
-- A card-based photo gallery showcasing scenic places.
+Checklist is an interactive photo gallery app. Users can:
 
-Users can edit their profile, add new places to the gallery with titles and image links, and interact with dynamic elements such as popups and form validation. This project emphasizes modular JavaScript structure, DOM manipulation, form validation, and dynamic rendering of components.
+- 🧑‍💼 Edit their profile  
+- ➕ Add new cards with titles and image links  
+- 🔍 Preview images in a popup  
+- ✅ Experience real-time form validation  
 
-## 🛠️ Technologies & Techniques Used
-- **HTML5** – Semantic structure for accessible content.
-- **CSS3** – Responsive layout using Flexbox and BEM methodology.
-- **JavaScript (ES6+)** – Modular components with classes.
-  - `Card.js` for image cards
-  - `FormValidator.js` for validating forms
-- **DOM Manipulation** – Dynamically rendering cards and tasks using JavaScript templates.
-- **Form Validation** – Custom validation logic using reusable configuration.
-- **Responsive Design** – Works across multiple screen sizes.
-- **Git** – Version control for collaboration and tracking changes.
-- **GitHub Pages** – Deployment of the live project.
+> Built as part of the _se_project_aroundtheus_ curriculum, this project focuses on modular JavaScript structure and dynamic DOM manipulation.
 
-## 📸 Screenshots
-> ![alt text](image.png)
-> - A sample card being added
-> - The to-do section in action
-> - Any modals or validation examples
+---
 
-## 🌐 Live Link
-[Visit the project on GitHub Pages](https://github.com/Nilyok)
+## ⚙️ Tech Stack
+
+- **HTML5 + CSS3** — BEM, Flexbox  
+- **JavaScript (ES6+)** — OOP with classes  
+- **Modules:**
+  - `Card.js`, `Popup.js`, `PopupWithForm.js`, `PopupWithImage.js`  
+  - `FormValidator.js`, `UserInfo.js`, `Section.js`
+- **Webpack** — Asset bundler  
+- **Git + GitHub Pages** — Version control & deployment  
+
+---
+
+## 💻 Preview
+
+![Checklist Project Screenshot](./f41aa9a1-54da-45d8-ab09-5667bbf97d5f.png)
+
+> The gallery UI includes an editable profile, card-based layout, and preview functionality.
+
+---
+
+## 🔗 Live Link
+
+[🚀 Visit the project on GitHub Pages](https://github.com/Nilyok)
