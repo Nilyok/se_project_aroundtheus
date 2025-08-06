@@ -62,8 +62,6 @@
     width: 18px;
     height: 21px;
     border: none;
-    /* margin: 0;
-    margin-right: 20px; */
     padding: 0;
     transition: transform 0.3s ease;
     flex-shrink: 0;
@@ -74,7 +72,7 @@
     transform: scale(1.4);
 }
 
-#card__preview-button {
+.card__preview-button {
     margin: 0;
     padding: 0;
     border: 0;
