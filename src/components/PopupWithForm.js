@@ -1,8 +1,5 @@
 import Popup from './Popup.js';
 
-console.log("Popup class is:", Popup); // 👈 Add this line
-
-
 export default class PopupWithForm extends Popup {
   constructor(popupSelector, handleFormSubmit) {
     super(popupSelector);
@@ -18,6 +15,15 @@ export default class PopupWithForm extends Popup {
     });
     return formValues;
   }
+
+  resetForm() {
+    this._form.reset();
+  }
+
+  getForm() {
+    return this._form;
+  }
+
 
   setEventListeners() {
     super.setEventListeners();

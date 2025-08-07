@@ -74,14 +74,16 @@ const profileFormPopup = new PopupWithForm("#profile-edit-modal", (formData) => 
 profileFormPopup.setEventListeners();
 
 const addCardFormPopup = new PopupWithForm("#add-card-modal", (formData) => {
-  const card = new Card({
-    name: formData["title"],
-    link: formData["description"],
-  }, "#card-template", handleImageClick);
+  cardSection.addItem(createCard({
+  name: formData["card-title"],
+  link: formData["card-url"]
+}));
 
-  cardSection.addItem(card.getView());
+
+  addCardFormPopup.resetForm();
   formValidators["add-card-form"].resetValidation();
 });
+
 addCardFormPopup.setEventListeners();
 
 /* -------------------------------------------------------------------------- */
@@ -101,6 +103,12 @@ addNewCardButton.addEventListener("click", () => {
 /* -------------------------------------------------------------------------- */
 /*                              Cards Section                                 */
 /* -------------------------------------------------------------------------- */
+
+function createCard(item) {
+  const card = new Card(item, "#card-template", handleImageClick);
+  return card.getView();
+}
+
 function handleImageClick(name, link) {
   imagePopup.open({ name, link });
 }
@@ -109,12 +117,11 @@ const cardSection = new Section(
   {
     items: initialCards,
     renderer: (item) => {
-      const card = new Card(item, "#card-template", handleImageClick);
-      const cardElement = card.getView();
-      cardSection.addItem(cardElement);
+      cardSection.addItem(createCard(item));
     },
   },
   ".cards__list"
 );
 
 cardSection.renderItems();
+
