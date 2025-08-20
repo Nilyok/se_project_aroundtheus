@@ -1,4 +1,3 @@
-/* Existing modal styles remain the same */
 .modal {
     display: flex;
     position: fixed;
@@ -22,16 +21,15 @@
 
 .modal__container {
     width: 430px;
-    /* Remove fixed height to allow content to determine height */
-    min-height: 330px; /* Changed from height to min-height */
+    min-height: auto; 
     position: relative;
     display: flex;
-    flex-direction: column; /* Changed from flex-wrap */
+    flex-direction: column;
     background-color: #fff;
     margin: auto;
     border-radius: 10px;
-    padding: 34px 36px 36px; /* Added padding to container */
-    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 34px 36px 36px;
+    box-sizing: border-box;
 }
 
 .modal__heading {
@@ -39,21 +37,21 @@
     font-size: 24px;
     font-weight: 900;
     width: 100%;
-    margin: 0 0 24px 0; /* Adjusted margin */
-    padding: 0; /* Removed padding-top */
+    margin: 0 0 54px 0;
+    padding: 0; 
 }
 
 .modal__form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Take up remaining space */
+    flex-grow: 1; 
 }
 
-/* Modified input container styling */
+
 .modal__form label {
     position: relative;
-    margin-bottom: 30px; /* Space for error message */
+    margin-bottom: 30px;
     display: block;
 }
 
@@ -69,17 +67,17 @@
     box-sizing: border-box;
 }
 
-/* Updated error message styling */
+
 .modal__error {
     position: absolute;
     font-size: 12px;
     line-height: 15px;
     color: #f00;
-    top: calc(100% + 5px); /* Position below input */
+    top: calc(100% + 5px); 
     left: 0;
     transition: opacity 0.3s;
-    opacity: 0; /* Start hidden */
-    visibility: hidden; /* Also not visible to screen readers when not active */
+    opacity: 0; 
+    visibility: hidden; 
 }
 
 .modal__error_visible {
@@ -93,7 +91,7 @@
     font-weight: 400;
     line-height: 21px;
     padding: 14px 0;
-    margin-top: auto; /* Push button to bottom */
+    margin-top: auto;
     background-color: #000;
     color: #fff;
     border-radius: 2px;
@@ -107,7 +105,6 @@
 }
 
 
-/* Existing close button styles remain the same */
 .modal__close {
     border: none;
     width: 40px;
@@ -123,26 +120,26 @@
     background-size: contain;
 }
 
-/* Image Preview Modal */
+
 .modal__container_image-preview {
     position: relative;
     background: transparent;
     max-width: 75vw;
-    max-height: 80vh; /* Slightly more space for image */
+    max-height: 80vh; 
     width: auto;
     padding: 0;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: flex-start; /* Align items to start (left) */
+    align-items: flex-start;
 }
 
 .modal__image-preview {
     max-width: 100%;
-    max-height: calc(80vh - 30px); /* Account for title space */
+    max-height: calc(80vh - 30px);
     object-fit: contain;
-    display: block; /* Remove flex item gaps */
+    display: block; 
 }
 
 .modal__image-title {
@@ -150,17 +147,17 @@
     font-size: 12px;
     line-height: 15px;
     font-weight: 400;
-    margin: 10px 0 0 0; /* Space above title */
+    margin: 10px 0 0 0; 
     padding: 0;
-    align-self: flex-start; /* Align text to left */
-    text-align: left; /* Ensure text alignment */
+    align-self: flex-start; 
+    text-align: left;
 }
 
-/* Close button specifically for image modal */
+
 .modal__container_image-preview .modal__close {
     top: -45px;
     right: -45px;
-    filter: brightness(0) invert(1); /* Make white */
+    filter: brightness(0) invert(1);
     background-size: cover;
     transition: opacity 0.3s ease;
 }
@@ -169,10 +166,63 @@
     opacity: 0.6;
 }
 
-/* Mobile adjustments */
+.modal__container_type_confirm {
+  width: 430px;
+  height: 181px;            
+  min-height: 181px;          
+  padding: 34px 36px 36px;   
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;                 
+}
+
+
+.modal__container_type_confirm .modal__heading {
+  margin: 0;
+}
+
+
+.modal__container_type_confirm .modal__form {
+  flex: 0 0 auto;            
+  display: flex;
+  flex-direction: column;
+  gap: 0;                    
+}
+
+.modal__container_type_confirm .modal__button {
+  margin-top: 0;
+  width: 358px;               
+  align-self: center;         
+  display: block;
+}
+
+
+.modal__container_type_avatar .modal__form {
+  flex-grow: 0;        
+  display: flex;
+  flex-direction: column;   
+  width: 100%;
+}
+
+
+.modal__container_type_avatar .modal__button {
+  width: 358px;      
+  display: block;
+  margin: 48px auto 0;      
+}
+
+.modal__container_type_avatar .modal__form label {
+  margin: 0;
+}
+
+
+
 @media screen and (max-width: 630px) {
     .modal__container_image-preview {
-        max-width: 85vw; /* Slightly more width on mobile */
+        max-width: 85vw;
     }
     
     .modal__container_image-preview .modal__close {
@@ -188,10 +238,10 @@
         margin-top: 8px;
     }
     
-    /* Keep your existing form modal mobile styles */
+
     .modal__container {
         width: 282px;
-        min-height: 322px;
+        min-height: auto;
         padding: 25px 22px;
     }
     
@@ -211,4 +261,61 @@
         font-size: 14px;
         padding: 14px 0;
     }
+
+
+    .modal__container_type_confirm {
+        width: 282px;
+        height: auto;                
+        min-height: auto;
+        padding: 25px 22px 22px;
+        gap: 20px;                
+    }
+
+    .modal__container_type_confirm .modal__heading {
+        margin: 0;      
+    }
+
+    .modal__container_type_confirm .modal__form { 
+        flex: 0 0 auto; 
+    }
+
+    .modal__container_type_confirm .modal__button {
+        width: 238px;          
+        margin: 0 auto;       
+    }
+
+    .modal__container_type_avatar {
+        width: 282px;
+        min-height: auto;
+        padding: 25px 22px 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;         
+    }
+
+    
+    .modal__container_type_avatar .modal__heading {
+        margin: 0;
+    }
+
+    
+    .modal__container_type_avatar .modal__form {
+        flex: 0 0 auto;         
+        display: flex;
+        flex-direction: column;
+        gap: 14px;               
+        width: 100%;
+    }
+
+   
+    .modal__container_type_avatar .modal__form label {
+        margin: 0;
+    }
+
+   
+    .modal__container_type_avatar .modal__button {
+        width: 238px;
+        margin: 0 auto;
+    }
 }
+
