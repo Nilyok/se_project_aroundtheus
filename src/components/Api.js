@@ -5,11 +5,16 @@ export default class Api {
   }
 
   _handleResponse(res) {
-    if (res.ok) return res.json();
-    return Promise.reject(`Error: ${res.status}`);
-  }
+  if (res.ok) return res.json();
+  return res.json()
+    .then(data => {
+      const msg = (data && (data.message || data.error)) || res.statusText || "Request failed";
+      throw new Error(`${res.status} ${msg}`);
+    })
+    .catch(() => { throw new Error(`${res.status} ${res.statusText}`); });
+}
 
-  // --- Users ---
+
   getUserInfo() {
     return fetch(`${this._baseUrl}/users/me`, {
       headers: this._headers,
@@ -59,14 +64,5 @@ export default class Api {
       method: shouldLike ? "PUT" : "DELETE",
       headers: this._headers,
     }).then(this._handleResponse);
-  }
-
-  
-  likeCard(cardId) {
-    return this.changeLikeCardStatus(cardId, true);
-  }
-
-  unlikeCard(cardId) {
-    return this.changeLikeCardStatus(cardId, false);
   }
 }
