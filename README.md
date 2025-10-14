@@ -5,10 +5,10 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=white)
 ![Status](https://img.shields.io/badge/Project-Complete-brightgreen)
 
-> 🧩 **Project 3 – Practicum Software Engineer Program**
+> 🧩 **Project 3 – TripleTen Software Engineer Program**
 
 **Around the World** is an interactive webpage that allows users to explore beautiful places through cards.  
-It was built using **HTML**, **CSS**, and **JavaScript**, following the Practicum design brief to practice interactivity, responsive layouts, and DOM manipulation.
+It was built using **HTML**, **CSS**, and **JavaScript**, following the TripleTen design brief to practice interactivity, responsive layouts, and DOM manipulation.
 
 ---
 
