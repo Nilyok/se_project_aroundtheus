@@ -25,14 +25,6 @@ Checklist is an interactive photo gallery app. Users can:
 
 ---
 
-## 💻 Preview
-
-![Checklist Project Screenshot](./f41aa9a1-54da-45d8-ab09-5667bbf97d5f.png)
-
-> The gallery UI includes an editable profile, card-based layout, and preview functionality.
-
----
-
 ## 🔗 Live Link
 
 [🚀 Visit the project on GitHub Pages](https://github.com/Nilyok)

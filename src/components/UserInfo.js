@@ -14,8 +14,8 @@ export default class UserInfo {
   }
 
   setUserInfo({ name, description, avatar }) {
-    if (typeof name === "string" && this._nameEl) this._nameEl.textContent = name;
-    if (typeof description === "string" && this._descEl) this._descEl.textContent = description;
+    if (name != null && this._nameEl) this._nameEl.textContent = name;
+    if (description != null && this._descEl) this._descEl.textContent = description;
     if (avatar && this._avatarEl) {
       this._avatarEl.src = avatar;
       this._avatarEl.alt = name ? `Avatar of ${name}` : (this._avatarEl.alt || "User avatar");

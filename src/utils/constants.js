@@ -7,6 +7,8 @@ export const validationConfig = {
   errorClass: "modal__error_visible"
 };
 
+
+
 export const initialCards = [
   {
     name: "Yosemite Valley",

@@ -11,7 +11,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
     publicPath: "",
-    // Optional: nicer asset paths in dist
     assetModuleFilename: "assets/[name][ext][query]",
   },
 
@@ -20,15 +19,15 @@ module.exports = {
   stats: "errors-only",
 
   devServer: {
-    static: path.resolve(__dirname, "./dist"), // HtmlWebpackPlugin serves in memory; this is fine for extra static files
+    static: path.resolve(__dirname, "./dist"), 
     compress: true,
     port: 8080,
     open: true,
-    hot: true,          // ✅ enable HMR
-    liveReload: false,  // ✅ avoid double reloads when HMR is on
+    hot: true,          
+    liveReload: false, 
     watchFiles: [
-      "src/**/*",       // ✅ watch all source files
-      "src/index.html", // ✅ ensure template changes trigger rebuild
+      "src/**/*",      
+      "src/index.html",
     ],
   },
 
@@ -66,7 +65,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "main.css", // optional but nice
+      filename: "main.css", 
     }),
   ],
 };

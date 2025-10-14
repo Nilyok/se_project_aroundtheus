@@ -1,7 +1,7 @@
 export default class Section {
   constructor({ items = [], renderer }, containerSelector) {
     this._items = items;
-    this._renderer = renderer;               // should return a DOM element
+    this._renderer = renderer;      
     this._container = document.querySelector(containerSelector);
     if (!this._container) {
       throw new Error(`Section: container "${containerSelector}" not found`);
